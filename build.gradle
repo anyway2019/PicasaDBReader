@@ -22,4 +22,12 @@ task picasaFacesScripts(type: CreateStartScripts) {
     classpath = jar.outputs.files + project.configurations.runtime
 }
 
+task indexesScripts(type: CreateStartScripts) {
+    mainClassName = "Indexes"
+    applicationName = "Indexes"
+    outputDir = new File(project.buildDir, 'scripts')
+    classpath = jar.outputs.files + project.configurations.runtime
+}
+
 startScripts.dependsOn picasaFacesScripts
+startScripts.dependsOn indexesScripts
