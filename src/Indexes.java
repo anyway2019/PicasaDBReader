@@ -75,7 +75,7 @@ public class Indexes {
     	StringBuilder s = new StringBuilder("Index;Original Indexes;type;Image Path\n");
         for(int i=0; i<entries; i++){
             if(indexes.get(i).compareTo(folderIndex)!=0){ // not a folder
-                s.append(i+";"+originalIndexes.get(i)+";0;"+names.get(new Long(indexes.get(i)).intValue()) +names.get(i)+"\n");
+                s.append(i+";"+originalIndexes.get(i)+";0;"+names.get(new Long(indexes.get(i)).intValue())+"\n");
             }else{ // folder
             	if(names.get(i).equals("")){
             		s.append(i+";"+originalIndexes.get(i)+";2;" +names.get(i)+"\n");
