@@ -2,7 +2,7 @@
 
 simple tool to read picasa 3.9 database.
 
-There are 2 simple programs:
+There are 3 simple programs:
 
 - PMPDB
 - PicasaFaces
